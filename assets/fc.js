@@ -2,7 +2,7 @@
   Setup vars
 ************/
 // Tumblr API stuff
-var api_token = '?api_key=c0HVDiKlgXIRTCSedzKZfsFywKcxyRjrxWVjH8smMZNxV4A0TI&callback=?';
+var api_token = '?api_key=[YOUR TUMBLR TOKEN]&callback=?';
 var api_url = window.location.protocol + '//api.tumblr.com/v2/blog/fuckedconcept.tumblr.com/';
 
 //Giphy API stuff
