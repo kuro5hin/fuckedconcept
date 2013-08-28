@@ -1,0 +1,111 @@
+@font-face {
+    font-family: Impact;
+    src: url('impact.ttf');
+}            
+
+html { overflow: hidden; }
+
+#concept a { 
+    text-decoration: none; 
+    color: #000; 
+    text-transform: uppercase; 
+    padding: 0; 
+    margin: 0; 
+    z-index: 10; 
+    text-shadow: 0 0 10px #fff;
+}
+#concept a:hover { opacity: 0.6 !important; }
+
+#concept span { padding: 0; margin: 0; z-index: 10; }
+
+#credits { 
+    text-align: center; 
+    position: fixed; 
+    bottom: 0; padding-bottom: 3px; 
+    width: 100%;
+    z-index: 10;
+}
+
+.credit-wrap {
+    border-top-left-radius: 5px; 
+    border-top-right-radius: 5px; 
+    background-color: #ffffff; 
+    opacity:0.6; 
+    padding: 4px 8px;
+}
+
+.credit-words {
+    color: #333; 
+    opacity: 1;
+}
+
+#credits p, #credits a {
+    font-family: Helvetica, sans-serif; 
+    font-size: 11px; 
+    color: #333;
+    z-index: 10;
+    padding: 0;
+    margin: 0;
+}
+
+#credits a#play {
+    text-decoration: none;
+    padding-left: 6px;
+}
+
+#concept {
+    position:absolute; 
+    top:0; bottom:0; left:0; right:0;
+    margin:auto; 
+    text-align:center; 
+    font-size: 12px; 
+    font-family: Impact, AvenirNext-Bold, sans-serif; 
+    width: 100%;
+    z-index: 10;
+    overflow: hidden;
+}
+
+#spinner {
+    position: fixed;
+    top: 50%;
+    height: 360px;
+    margin-top: -180px;
+    width: 100%;
+    text-align: center;
+    z-index: 10;
+}
+
+#instructions {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    color: #aaa;
+    font-family: Helvetica, Sans-serif; 
+    font-size: 16px;
+    z-index: 10;
+}
+
+.instruction-words {
+    border-radius: 5px; 
+    background-color: #ffffff; 
+    opacity:0.6; 
+    padding: 4px 8px;
+    display; block;
+}
+
+#background {
+    background-color: transparent;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    opacity:0.75;
+    margin: -10;
+    padding: 0;
+    top: 0;
+    left: 0;
+}
