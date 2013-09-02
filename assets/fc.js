@@ -86,8 +86,9 @@ function place_word(word) {
     $('#concept span a').html(word); // set the new word
 
     // Set the current page's permalink and window url bar. This doesn't always work great.
-    $('#link a').attr("href", window.location.protocol + window.location.pathname + '?g='+current_gif_id+'&w='+current_post_id);
-    window.history.pushState("page", "Title", window.location.pathname+'?g='+current_gif_id+'&w='+current_post_id);
+    var this_page_url = window.location.protocol+'//'+window.location.hostname+window.location.pathname+'?g='+current_gif_id+'&w='+current_post_id;
+    $('#link a').attr("href", this_page_url);
+    window.history.pushState("page", "Title", this_page_url);
     
     $('body').display(); // set the font size and all that business now
 }
